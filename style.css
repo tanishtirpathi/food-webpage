@@ -286,11 +286,48 @@ marquee h4 {
   background-repeat: no-repeat;
   width: 500px;
   display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 10px 50px;
 }
 .another-image h4 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 31px;
+  font-weight: 700;
+  font-family: syne;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.another-image h3 {
+  color: rgb(0, 0, 0);
   font-size: 30px;
   font-weight: 700;
   font-family: syne;
-  text-shadow: 2px 2px 2px rgb(253, 82, 2);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.another-image h5 {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: syne;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.another-image button {
+  margin: 10px 0px;
+  padding: 5px 15px;
+  text-shadow: 2px 2px 2px rgb(219, 57, 8);
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-family: syne;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(46, 44, 41);
+}
+.another-image button:hover {
+  background-color: black;
 }
