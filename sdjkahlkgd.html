@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>asdgdg</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: rgb(241, 229, 229);
+        background-color: rgb(34, 31, 31);
+      }
+      section {
+        display: grid;
+        place-items: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: rgb(241, 229, 229);
+        background-color: rgb(34, 31, 31);
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(241, 229, 229);
+        transition: 0.5s;
+      }
+      .hidden{
+        opacity: 0;
+        transition: all 0.2s ease-out;
+      }
+      .show{
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hidden">
+      <h1>tasdhjkasdhg</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+        maxime neque doloribus!
+      </p>
+    </section class="hidden">
+    <section>
+      <h1>tasdhjkasdhg</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+        maxime neque doloribus!
+      </p>
+    </section>
+    <section class="hidden">
+      <h1>tasdhjkasdhg</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+        maxime neque doloribus!
+      </p>
+    </section>
+    <section class="hidden">
+      <h1>tasdhjkasdhg</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+        maxime neque doloribus!
+      </p>
+    </section>
+  </body>
+  <script>
+    const observer = new IntersectionObserver((entery) => {
+      console.log(entery);
+      entery.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+    const hide = document.querySelectorAll(".hidden");
+    hide.forEach((el) => observer.observe);
+  </script>
+</html>

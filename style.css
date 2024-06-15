@@ -47,7 +47,7 @@ nav ul li a {
 }
 nav ul li:hover a {
   text-decoration: none;
-  background-color: rgba(255, 217, 0, 0.363);
+  background-color: rgba(255, 174, 0, 0.363);
   color: black;
   box-shadow: 0px 0px 10px rgb(255, 216, 145);
   font-size: 21px;
@@ -83,7 +83,8 @@ nav ul li:hover a {
   transition: all.4s ease-out;
 }
 .button button:hover {
-  background-color: rgb(255, 174, 0);
+  background-color: rgb(255, 123, 0);
+  transform: scale(1.1);
 }
 .button button a {
   text-decoration: none;
@@ -129,7 +130,7 @@ nav ul li:hover a {
   padding: 40px 20px;
   justify-content: space-evenly;
   transition: all.4s ease-out;
-  background: url(background-2.jpg);
+  background: url(background2.jpg);
 }
 .card {
   display: flex;
@@ -139,8 +140,23 @@ nav ul li:hover a {
   border-radius: 10px;
   box-shadow: 0px 0px 20px black;
   flex-direction: column;
-  background-color: rgb(14, 13, 12);
+  /* opacity: 0; */
+  transition: all 0.4s ease-out;
+  background-color: rgb(20, 19, 18);
 }
+
+/*.show {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 13px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+  flex-direction: column;
+  transition: all 1s ease-out;
+  background-color: rgb(14, 13, 12);
+} */
 .card img {
   width: 173px;
   height: 180px;
@@ -155,22 +171,35 @@ nav ul li:hover a {
   border: 1px solid transparent;
   color: rgb(255, 255, 255);
   font-size: 18px;
-  box-shadow: 0px 0px 10px rgb(7, 5, 5);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
   font-family: syne;
+  transition: all 0.4s ease-out;
   font-weight: 700;
   background-color: rgba(255, 136, 0, 0.76);
 }
 .card:hover img {
   box-shadow: 0px 0px 10px black;
 }
-marquee {
+.card:hover button {
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+  background-color: rgba(255, 160, 51, 0.897);
+}
+.card:hover {
+  transform: scale(1.2);
   background-color: black;
+}
+.slider {
+  background-color: rgb(24, 5, 2);
+}
+marquee {
+  background-color: rgb(24, 5, 2);
   padding: 5px 20px;
-  box-shadow: 0px 0px 10px orangered;
 }
 marquee h4 {
   color: rgb(255, 255, 255);
   font-size: 20px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-family: syne-MONO;
 }
 /* page 3 si started form here */
@@ -183,7 +212,7 @@ marquee h4 {
   /* background-color: rgb(255, 202, 29); */
 }
 .page-3 {
-  background-color: rgb(255, 231, 210);
+  background-color: rgb(90, 90, 90);
 }
 .row img {
   width: 400px;
@@ -230,7 +259,7 @@ marquee h4 {
 /* page four  */
 .roow {
   display: flex;
-  background-color: rgb(255, 231, 210);
+  background-color: rgb(90, 90, 90);
 }
 .roow .column {
   display: flex;
@@ -243,7 +272,7 @@ marquee h4 {
   height: 580px;
   border-radius: 5px;
   margin: 10px 16px;
-  box-shadow: 10px 10px 40px black;
+  box-shadow: 10px 10px 40px rgb(0, 0, 0);
   transition: all 0.4s ease-out;
 }
 .roow .column h2 {
@@ -330,4 +359,99 @@ marquee h4 {
 }
 .another-image button:hover {
   background-color: black;
+}
+
+/* *page 7  */
+.txt {
+  background-image: url(bg4.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.margin {
+  margin: 200px 10px;
+}
+.txt-fed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-fed h3 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: rgba(255, 158, 113, 0.521);
+  font-weight: 700;
+  margin: 0px 10px;
+  padding: 10px 20px;
+  font-family: syne;
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+.txt h1 {
+  color: rgb(184, 179, 179);
+  font-size: 65px;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-family: syne;
+  text-shadow: 2px 2px 2px #ffc9af;
+}
+.txt h2 {
+  color: rgb(182, 175, 175);
+  font-size: 35px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: syne;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+.txt .txt-fed select {
+  width: 200px;
+  padding: 0px 20px;
+  height: 40px;
+  border: 1px solid rgb(228, 119, 18);
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: rgba(240, 248, 255, 0.541);
+  margin: 10px 0px;
+  font-size: 15px;
+  font-family: syne;
+  color: rgb(43, 35, 35);
+  text-shadow: 2px 2px 2px rgb(143, 143, 143);
+  transition: all 0.3s ease-in-out;
+}
+.txt-fed select:hover {
+  color: black;
+  background-color: rgba(240, 248, 255, 0.801);
+}
+footer img {
+  width: 100%;
+  height: 670px;
+}
+
+.last {
+  display: flex;
+  background-color: black;
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.last a {
+  color: rgb(161, 161, 161);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: syne;
+  transition: all 0.3s ease-in-out;
+}
+.last a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: syne;
 }
